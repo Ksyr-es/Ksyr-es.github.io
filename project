@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            /* border:  10px blue solid; */
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: antiquewhite;
+            height: 25%;
+            padding: 0%;
+        }
+        div{
+            background-color: azure;
+            height: 50%;
+            padding: 0;
+        }
+        footer{
+            background-color: cadetblue;
+            height: 25%;
+            padding: 0;
+        }
+    </style>
+    <script>
+        console.time('zqkl');
+    </script>
+</head>
+
+<body>
+    <header>
+        hello world
+    </header>
+    <div>
+        mid box
+    </div>
+    <footer>
+        bottom
+    </footer>
+    <script>
+        console.timeEnd('zqkl');
+        let time1=new Date();
+        {
+            let i=1;
+            while (i<=1e9){
+                i++;
+            }
+        }
+        let myBody=document.querySelector("body");
+        myBody.style.height =innerHeight+"px"
+        let luck =Math.floor(Math.random() * 10000);
+        console.log(luck);
+        let d1=document.querySelector("div");
+        d1.textContent="随即四位数:"+luck;
+        let f1=document.querySelector("footer");
+        f1.textContent="运算的时间："+(new Date()-time1)+'ms';
+        console.log("结束时间"+(new Date()-time1)+'ms');
+    </script>
+</body>
+</html>
